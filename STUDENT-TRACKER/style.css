@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 body {
     height: 100vh;
     background: radial-gradient(circle at top, #1e293b, #020617);
@@ -14,8 +13,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-/* Glow effect */
 body::before, body::after {
     content: "";
     position: absolute;
@@ -26,18 +23,14 @@ body::before, body::after {
     filter: blur(120px);
     opacity: 0.4;
 }
-
 body::before {
     top: -100px;
     left: -100px;
 }
-
 body::after {
     bottom: -100px;
     right: -100px;
 }
-
-/* Container */
 .container {
     width: 520px;
     max-width: 90%;
@@ -49,20 +42,16 @@ body::after {
     text-align: center;
     border: 1px solid rgba(255,255,255,0.1);
 }
-
 h1 {
     color: white;
     margin-bottom: 20px;
     text-shadow: 0 0 10px rgba(59,130,246,0.7);
 }
-
-/* Inputs */
 .input-section {
     display: flex;
     gap: 8px;
     margin-bottom: 15px;
 }
-
 input, select {
     padding: 10px;
     border-radius: 10px;
@@ -70,12 +59,9 @@ input, select {
     background: rgba(255,255,255,0.1);
     color: white;
 }
-
 input::placeholder {
     color: #cbd5f5;
 }
-
-/* Button */
 button {
     padding: 10px;
     border-radius: 10px;
@@ -84,41 +70,31 @@ button {
     color: white;
     cursor: pointer;
 }
-
-/* Stats */
 .stats {
     color: white;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-
-/* Progress */
 .progress-bar {
     height: 10px;
     background: rgba(255,255,255,0.1);
     border-radius: 10px;
     margin-bottom: 15px;
 }
-
 #progress {
     height: 100%;
     width: 0%;
     background: linear-gradient(90deg, #22c55e, #4ade80);
 }
-
-/* Chart */
 canvas {
     margin: 15px 0;
     background: rgba(255,255,255,0.05);
     border-radius: 10px;
 }
-
-/* Task list */
 ul {
     list-style: none;
 }
-
 li {
     background: rgba(255,255,255,0.08);
     padding: 12px;
@@ -129,19 +105,13 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-
-/* Completed */
 .completed {
     text-decoration: line-through;
     opacity: 0.6;
 }
-
-/* Urgent */
 .urgent {
     border-left: 4px solid red;
 }
-
-/* Delete button */
 .delete-btn {
     background: red;
     border: none;
@@ -149,8 +119,6 @@ li {
     border-radius: 6px;
     color: white;
 }
-
-/* Category colors */
 .category.study { color: #22c55e; }
 .category.assignment { color: #f59e0b; }
 .category.personal { color: #ec4899; }
